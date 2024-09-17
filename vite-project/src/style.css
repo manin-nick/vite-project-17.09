@@ -1,0 +1,211 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/vite-project/src/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'fraunces';
+  src: url(/vite-project/src/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+:root {
+  --main-color: rgb(61, 129, 104);
+}
+
+.desktop {
+  background-color: rgb(242, 234, 226);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_card {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+}
+
+.container_picture {
+  width: 150%;
+  height: 450px;
+}
+
+.picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.description {
+  width: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: rgb(108, 114, 137);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+.name {
+  color: rgb(28, 35, 43);
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.product_description {
+  color: rgb(108, 114, 137);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 24px;
+}
+
+.title {
+  margin-right: 176.5px;
+}
+
+.name {
+  margin-right: 32px;
+}
+
+.product_description {
+  margin-right: 31.5px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  /*justify-content: center; лишнее*/
+  margin-top: 29px;
+}
+
+.price {
+  color: var(--main-color); /*будет переменная*/
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.old_price {
+  margin-left: 19px;
+  color: rgb(108, 114, 137);
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration-line: line-through;
+}
+
+.add_to_card {
+  display: flex; /*не указал*/
+  border-radius: 8px;
+  background: var(--main-color); /*будет переменная*/
+  margin-top: 30px;
+  /*width: auto; лишнее*/
+  height: 48px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  border: none;
+  cursor: pointer;
+  align-items: center; /*не указал*/
+  justify-content: center; /*не указал*/
+  width: 236px;
+}
+
+.add_to_card:hover {
+  background: rgb(6, 112, 71);
+}
+
+.button_text {
+  display: inline;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+  /*padding: 15px 62px 16px 10px; лишнее*/
+  padding-left: 15px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  /* margin-left: 63px; лишнее*/
+}
+
+.color-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.green {
+  background: rgb(61, 129, 104);
+}
+
+.gray {
+  background: rgb(108, 114, 137);
+}
+
+.black {
+  background: rgb(28, 35, 43);
+}
+
+.green .price,
+.green .add_to_card {
+  color: rgb(61, 129, 104);
+}
+
+.gray .price,
+.gray .add_to_card {
+  color: rgb(108, 114, 137);
+}
+
+.black .price,
+.black .add_to_card {
+  color: rgb(28, 35, 43);
+}
+
+

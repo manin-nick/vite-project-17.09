@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vite-project/src/style.css">
+    <title>Product Card</title>
+</head>
+<body>
+
+    <div class="color-switcher">
+        <button class="color-button" data-color="green"></button>
+        <button class="color-button" data-color="gray"></button>
+        <button class="color-button" data-color="black"></button>
+    </div>
+
+    <div class="desktop"> 
+        <div class="product_card" id="productCard"> <!--блок карточки-->
+            <div class="container_picture">
+                <img src="/vite-project/src/images/Bitmap.svg" alt="картинка" class="picture">
+            </div>
+    
+            <div class="description">  <!--общий блок, сделать флексом-->
+                <div class="container-title-and-name"> <!--блок с названием-->
+                    <h1 class="title">PERFUME</h1>
+                    <p class="name">Gabrielle Essence Eau De Parfum</p>
+                </div>
+    
+                <div class="container-product_description"> <!--блок с описанием-->
+                    <p class="product_description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                </div>
+    
+                <div class="container-prices-and-button"> <!--блок с ценами и кнопкой-->
+                    <div class="prices">
+                        <p class="price" id="price">$149.99</p>
+                        <p class="old_price">$169.99</p>
+                    </div>
+    
+                    <button class="add_to_card" id="addToCart">
+                        <img src="/vite-project/src/images/Shape.svg" alt="иконка" class="icon">
+                        <p class="button_text">Add to Cart</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+    
+
+<script src="/vite-project/src/main.js"></script>
+
+</body>
+</html>
